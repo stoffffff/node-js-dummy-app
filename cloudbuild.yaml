@@ -2,7 +2,7 @@ steps:
   - name: 'node:${_NODE_VERSION}'
     entrypoint: 'npm'
     args: ['install']
-  - name: 'node:${_NODE_VERSION}'
+  - name: 'node:${_NODE_VERSION}' #trigger build
     entrypoint: 'npm'
     args: ['test']
 artifacts:
