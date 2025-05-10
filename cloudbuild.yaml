@@ -11,3 +11,5 @@ artifacts:
       packagePath: 'build-apps/node-js-dummy-app'
 substitutions:
   _NODE_VERSION: '16'
+options:
+  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
