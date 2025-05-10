@@ -1,0 +1,13 @@
+steps:
+  - name: 'node:${_NODE_VERSION}'
+    entrypoint: 'npm'
+    args: ['install']
+  - name: 'node:${_NODE_VERSION}'
+    entrypoint: 'npm'
+    args: ['test']
+artifacts:
+    npmPackages:
+    - repository: 'https://europe-west1-npm.pkg.dev/exam-prep-459213/npm-repo'
+      packagePath: 'build-apps/node-js-dummy-app'
+substitutions:
+  _NODE_VERSION: '16'
